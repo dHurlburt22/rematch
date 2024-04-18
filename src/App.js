@@ -1,12 +1,11 @@
-import{useEffect, useState} from 'react'
+import {useState} from 'react'
 import { supabase } from './supabaseClient';
-import logo from './logo.svg';
 import './App.css';
 
 function Library(){
   const[myGame, setMyGame] = useState([])
   async function getGames(){
-    let { data: GameRecommendations, error } = await supabase
+    let { data: GameRecommendations} = await supabase
     .from('GameRecommendations')
     .select('*')
     setMyGame(GameRecommendations);
@@ -63,7 +62,7 @@ function MyForm() {
 function HonorableMentions(){
   const[myMentions, setMyMentions] = useState([])
   async function getMentions(){
-    let { data: HonorableMentions, error } = await supabase
+    let { data: HonorableMentions} = await supabase
     .from('HonorableMentions')
     .select('*')
     setMyMentions(HonorableMentions);
