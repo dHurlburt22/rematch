@@ -17,10 +17,10 @@ function Library(){
     <div>
         {myGame.toReversed().map(game => (
           <div className="row justify-content-center">
-          <div className="col-4 h1 gradeGreen rounded-pill display-1 my-4 w-75">
-            <h1>{game.ranking}</h1>
-            <h2>{game.title}</h2>
-            <h3>{game.recommendation}</h3>
+          <div className="col-4 h1 gradeGreen rounded-5 display-1 my-4 w-75">
+            <h1 className="numberSizing">{game.ranking}</h1>
+            <h2 className="fs-1">{game.title}</h2>
+            <h3 className="fs-4">{game.recommendation}</h3>
           </div>
           </div>
         ))
@@ -93,7 +93,7 @@ function App() {
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha256-2TnSHycBDAm2wpZmgdi0z81kykGPJAkiUY+Wf97RbvY=" crossorigin="anonymous"></link>
 
     <header className="App-header">
-      <h1 class="border-5 headerSizing w-75 btn-gradient-2">
+      <h1 className="border-5 headerSizing w-75 btn-gradient-2">
         My Top 10 Game's of all time:
       </h1>
 

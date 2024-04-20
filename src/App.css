@@ -24,9 +24,13 @@
   border-radius: 5px;
 }
 
+.numberSizing{
+  font-size: 3rem;
+}
+
 
 .headerSizing{
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 .submitPadding{
