@@ -75,7 +75,7 @@ function HonorableMentions(){
         {myMentions.map(mentions => (
           <div className="row justify-content-center">
           <div className="col-4 h1 gradePink rounded-4 display-1 my-3 w-50">
-            <h3>{mentions.videoGames}</h3>
+            <h3 className="fs-1">{mentions.videoGames}</h3>
             <h5>{mentions.gameDescriptions}</h5>
           </div>
           </div>
